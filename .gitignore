@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Dataset files (Pump Sensor / NASA)
+*.csv
+*.zip
+*.rar
+
+# Model weights and saved models
+*.h5
+*.tflite
+*.pkl
+models/
+
+# System files
+.DS_Store
+__pycache__/
