@@ -1,0 +1,57 @@
+# =============================================================================
+# Pump Anomaly Monitor - .gitignore
+# =============================================================================
+
+# --- Data ---------------------------------------------------------------------
+# The raw dataset is large and is not redistributed in this repository.
+# Only the README inside data/ is tracked.
+data/*
+!data/README.md
+
+# --- Secrets and credentials (NEVER commit these) ---------------------------
+.env
+.env.*
+*.pem
+serviceAccountKey*.json
+service-account*.json
+*-firebase-adminsdk-*.json
+
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# --- Jupyter ------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Logs and temporary files -------------------------------------------------
+*.log
+*.tmp
+*.bak
+
+# --- Editors and IDEs ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# --- Operating system files ---------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Flutter / Dart (build output, local tooling) ----------------------------
+# "flutter create" adds its own .gitignore inside flutter_app/.
+# These entries are a safety net for the repository root.
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/build/
+**/android/local.properties
+**/android/key.properties
+*.jks
+*.keystore
